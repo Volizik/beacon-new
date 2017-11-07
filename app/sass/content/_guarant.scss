@@ -1,0 +1,32 @@
+.guarantee {
+  background-color: #edeff1;
+  &__wrap {
+    padding: 50px 0 0px 0;
+    img {
+      @include breakpoint(max-width 500px) {
+        display: none;
+      }
+      position: relative;
+      float: left;
+      width: 20%;
+    }
+    &__text {
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+        h2 {
+          margin-top: 0;
+        }
+        p {
+          padding-right: 10px;
+        }
+      }
+      position: relative;
+      float: left;
+      width: 80%;
+      padding-left: 30px;
+      p {
+        font-weight: 600;
+      }
+    }
+  }
+}

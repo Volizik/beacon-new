@@ -1,0 +1,58 @@
+.section2 {
+  margin: 80px 0;
+  &__text {
+    p {
+      @include breakpoint(max-width 1200px) {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding-left: 0;
+      }
+      display: block;
+      width: 80%;
+      padding: 20px;
+      margin-right: 40px;
+      margin-bottom: 0;
+      float: right;
+      color: #000;
+      font-weight: 600;
+    }
+    a {
+      @include breakpoint(max-width 1200px) {
+        float: left;
+        margin: 10px 0;
+      }
+      @include breakpoint(max-width 450px) {
+
+      }
+      margin: 10px 100px 10px 0;
+      float: right;
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+  &__video {
+    &__wrap {
+      @include breakpoint(max-width 767px) {
+        margin-top: 20px;
+        float: left;
+        clear: both;
+        width: 100%;
+      }
+      position:relative;
+      padding-bottom:56.25%;
+      padding-top:30px;
+      height:0;
+      overflow:hidden;
+      border:1px solid #ccc;
+      iframe, object, embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.socials {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 70px;
+  h2 {
+    margin: 40px 0 40px 0;
+    position: relative;
+  }
+  &__block {
+    @include breakpoint(max-width 991px) {
+      padding-bottom: 50px;
+    }
+    position: relative;
+    img {
+      padding: 10px;
+    }
+    p {
+      @include breakpoint(max-width 991px) {
+        bottom: 0;
+        padding-left: 140px;
+      }
+      @include breakpoint(max-width 440px) {
+        padding-left: 0;
+      }
+      position: absolute;
+      bottom: -30px;
+      padding: 0px 35px;
+      font-weight: 600;
+    }
+  }
+}

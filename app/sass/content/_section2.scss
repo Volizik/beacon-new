@@ -15,7 +15,9 @@
       display: block;
       margin-bottom: 30px;
       color: #000;
-      font-weight: 600;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: 'Open Sans';
       @include breakpoint(max-width 1200px) {
         width: 100%;
         margin: 0;
@@ -24,13 +26,11 @@
     }
     a {
       float: right;
+      margin: 20px 0;
       @include breakpoint(max-width 1200px) {
-        float: left;
-        margin: 10px 0;
-      }
-      @include breakpoint(max-width 450px) {
 
       }
+
     }
   }
   &__video {

@@ -1,7 +1,9 @@
 .guarantee {
   background-color: #edeff1;
   &__wrap {
-    padding: 50px 0 0px 0;
+    position: relative;
+    float: left;
+    padding: 120px 0;
     img {
       @include breakpoint(max-width 500px) {
         display: none;
@@ -11,21 +13,24 @@
       width: 20%;
     }
     &__text {
-      @include breakpoint(max-width 500px) {
-        width: 100%;
-        h2 {
-          margin-top: 0;
-        }
-        p {
-          padding-right: 10px;
-        }
-      }
       position: relative;
       float: left;
       width: 80%;
       padding-left: 30px;
+      h2 {
+        font-size: 34px;
+        margin-top: 0;
+        font-family: 'Montserrat';
+        font-weight: 800;
+      }
       p {
-        font-weight: 600;
+        font-size: 18px;
+        padding-right: 10px;
+        font-family: 'Open Sans';
+        font-weight: 700;
+      }
+      @include breakpoint(max-width 500px) {
+        width: 100%;
       }
     }
   }

@@ -5,6 +5,9 @@
   h2 {
     margin: 40px 0 40px 0;
     position: relative;
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Montserrat';
   }
   &__block {
     @include breakpoint(max-width 991px) {

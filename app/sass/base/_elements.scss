@@ -1,20 +1,22 @@
 .btn-order {
-  font-family:' Montserrat';
+  font-family:'Open Sans';
   font-weight: 800;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
-  padding: 20px 60px;
-  color: #000;
-  border: 2px solid #000;
-  border-radius: 5px;
+  padding: 10px 60px;
+  color: #ef5145;
+  border: 2px solid #ef5145;
   text-align: center;
   transition: .5s;
+  background-color: transparent;
+  border-radius: 5px;
   &:hover {
-    background-color: #000000;
+    background-color: #ef5145;
     color: #fff;
     transition: .2s;
   }
   @include breakpoint(max-width 500px) {
     padding: 10px 30px;
+    min-width: 250px;
   }
 }

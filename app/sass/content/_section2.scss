@@ -1,34 +1,35 @@
 .section2 {
   margin: 80px 0;
   &__text {
+    @include breakpoint(max-width 992px) {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-family: 'Montserrat';
+      font-size: 31px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
     p {
+      display: block;
+      margin-bottom: 30px;
+      color: #000;
+      font-weight: 600;
       @include breakpoint(max-width 1200px) {
         width: 100%;
-        float: left;
         margin: 0;
         padding-left: 0;
       }
-      display: block;
-      width: 80%;
-      padding: 20px;
-      margin-right: 40px;
-      margin-bottom: 0;
-      float: right;
-      color: #000;
-      font-weight: 600;
     }
     a {
+      float: right;
       @include breakpoint(max-width 1200px) {
         float: left;
         margin: 10px 0;
       }
       @include breakpoint(max-width 450px) {
 
-      }
-      margin: 10px 100px 10px 0;
-      float: right;
-      &:hover {
-        background-color: #000000;
       }
     }
   }

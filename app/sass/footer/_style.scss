@@ -1,5 +1,6 @@
 .footer {
   background-color: #edeff1;
+  overflow: hidden;
   &__head {
     @include breakpoint(max-width 1200px) {
       display: none;
@@ -29,7 +30,7 @@
     font-weight: 300;
   }
   span>p{
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
   }
   &__contact {
@@ -45,6 +46,9 @@
       float: left;
     }
     p {
+      font-size: 17px;
+      font-family: 'Montserrat';
+      font-weight: 300;
       position: relative;
       clear: both;
       left: 30px;
